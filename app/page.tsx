@@ -9,6 +9,18 @@ const LATEST_ALBUMS = [
     artist: "FKA Twigs",
     image: "/albums/CAPRISONGS.jpg",
   },
+  {
+    id: 2,
+    title: "MOTOMAMI",
+    artist: "Rosalia",
+    image: "/albums/MOTOMAMI.jpg",
+  },
+  {
+    id: 2,
+    title: "good kid, m.A.A.d city",
+    artist: "Kendrick Lamar",
+    image: "/albums/GKMC.jpg",
+  },
   ];
 
 export default function Home() {
