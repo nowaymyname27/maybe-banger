@@ -9,7 +9,7 @@ export default function Header() {
           href="/" 
           className="text-xl font-bold tracking-tight text-zinc-900 hover:opacity-70 transition-opacity"
         >
-          Maybe Banger.
+          Maybe Banger
         </Link>
 
         {/* Navigation Tabs */}
