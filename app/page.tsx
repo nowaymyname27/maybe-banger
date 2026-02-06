@@ -25,13 +25,13 @@ const LATEST_ALBUMS = [
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-5xl px-6 py-12">
-      <h1 className="text-4xl text-center font-bold tracking-tighter text-zinc-900 sm:text-5xl">
-        How I Review Music Here at Maybe Banger
+    <main className="mx-auto max-w-6xl px-6 py-12">
+      <h1 className="text-4xl text-left font-bold tracking-tighter text-zinc-900 sm:text-5xl">
+        Check Out The Latest Review
       </h1>
       {/* Pass your specific video ID here */}
       <div className="mt-6">
-        <YouTubeEmbed videoId="dQw4w9WgXcQ" />
+        <YouTubeEmbed videoId="T1PF41Plx0M" />
       </div>
 
        {/* Latest Reviews Section */}
