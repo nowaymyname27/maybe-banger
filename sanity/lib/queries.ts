@@ -12,7 +12,10 @@ const albumsQuery = groq`*[_type == "album"] | order(publishedAt desc) {
   verdict,
   "genre": genres[]->title,
   duration,
-  videoId, // <-- Add this line
+  videoId,
+  favoriteSong,
+  worstSong,
+  tracks,
   publishedAt
 }`;
 
@@ -31,6 +34,12 @@ export async function getLatestAlbums(): Promise<Album[]> {
   );
 }
 
+export interface Song {
+  _key: string; // Sanity automatically adds keys to array items
+  title: string;
+  rating: string;
+}
+
 export interface Album {
   _id: string;
   title: string;
@@ -41,8 +50,11 @@ export interface Album {
   verdict: string;
   genre: string[];
   duration: number;
-  videoId: string; 
+  videoId: string;
+  favoriteSong?: string; 
+  worstSong?: string;    
   publishedAt: string;
+  tracks?: Song[];
 }
 
 // 3. The Fetch Function

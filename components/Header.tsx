@@ -10,7 +10,7 @@ export default function Header() {
   if (pathname?.startsWith("/studio")) return null;
   return (
     <header className="sticky top-0 z-10 w-full border-b border-zinc-200 bg-green-500/50 backdrop-blur-sm">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
         <Link 
           href="/" 

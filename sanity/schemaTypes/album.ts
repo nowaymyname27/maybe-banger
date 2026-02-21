@@ -35,7 +35,7 @@ export default defineType({
         hotspot: true,
       },
     }),
-    
+
     // --- NEW RATING SYSTEM ---
     defineField({
       name: 'rating',
@@ -96,6 +96,13 @@ export default defineType({
       title: 'Published at',
       type: 'datetime',
       initialValue: () => new Date().toISOString(),
+    }),
+    defineField({
+      name: 'tracks',
+      title: 'Track List',
+      description: 'Add the songs and rate them individually.',
+      type: 'array',
+      of: [{ type: 'song' }], // Reference the object we just created
     }),
   ],
   preview: {
